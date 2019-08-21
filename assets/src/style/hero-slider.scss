@@ -1,0 +1,168 @@
+.hero-slider-wrapper {
+  position: relative;
+
+  padding-top: 280px;
+  padding-bottom: 1em;
+  margin-bottom: 2rem;
+
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+
+  background-color: $hero-background-color;
+  border-bottom: 1px solid $hero-border-color;
+
+}
+
+.hero__list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  list-style: none;
+}
+
+.hero__item {
+  width: 25%;
+
+  counter-increment: li;
+}
+
+.hero__item-label {
+  display: inline-block;
+  position: relative;
+
+  padding-top: .75em;
+
+  font-size: 1.125em;
+  line-height: 1.5em;
+
+  text-transform: uppercase;
+  color: $main-text-color;
+
+  cursor: pointer;
+
+  transition: .2s;
+
+  &:before {
+    content: counter(li);
+    display: inline-block;
+
+    margin-right: .75em;
+
+    width: 1.5em;
+    height: 1.5em;
+
+    text-align: center;
+
+    background-color: $main-text-color;
+    color: $hero-background-color;
+
+    transition: .2s;
+  }
+
+  &:hover {
+    color: $main-blue-color-hover;
+
+    &:before {
+      background-color: $main-blue-color-hover;
+    }
+  }
+}
+
+
+.hero__item-content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  padding: 2.5em;
+
+  width: 100%;
+  height: 280px;
+
+  background-color: $hero-content-background-color;
+
+  font-weight: lighter;
+}
+
+.hero__item-title {
+  margin-bottom: .325em;
+
+  font-size: 2.625em;
+  line-height: 1em;
+
+  text-transform: uppercase;
+  color: $hero-title-color;
+}
+
+.hero__item-text {
+  font-size: 1.25em;
+  color: $main-text-color;
+}
+
+.hero__item.active {
+  .hero__item-label {
+    color: $main-blue-color;
+
+    &:before {
+      background-color: $main-blue-color;
+    }
+  }
+
+  .hero__item-content {
+    display: block;
+  }
+
+  .hero__item-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero__list {
+    flex-wrap: wrap;
+  }
+
+  .hero__item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-slider-wrapper {
+    padding-top: 0;
+  }
+
+  .hero__item.active {
+    .hero__item-label {
+      color: $main-text-color;
+      &:before {
+        background-color: $main-text-color;
+      }
+    }
+
+    .hero__item-content {
+      padding: 0;
+    }
+  }
+
+  .hero__item {
+    width: 100%;
+  }
+
+  .hero__item-content {
+    display: block;
+    position: static;
+
+    padding: 20px !important;
+  }
+
+  .hero__item-label {
+    margin-bottom: 1em;
+  }
+}

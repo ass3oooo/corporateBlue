@@ -1,0 +1,129 @@
+#searchField {
+  display: inline-block;
+  width: auto;
+
+  font-family: "Oswald", sans-serif;
+
+  background-color: $navbar-background-color;
+  border-color: $navbar-border-color;
+  border-radius: 0;
+}
+
+.search-submit {
+  background-color: $main-blue-color;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+
+  color: #ffffff;
+  border-radius: 0;
+}
+
+.navbar-brand {
+  position: relative;
+  padding-left: 1.3rem;
+
+  color: $brand-text-color;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+
+    margin-left: -1em;
+    margin-top: -0.6em;
+
+
+    width: 1rem;
+    height: 1rem;
+
+    border: 2px solid $main-blue-color;
+  }
+}
+
+.header {
+  padding-top: 25px;
+  margin-bottom: 30px;
+}
+
+.navbar-nav {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.nav-item {
+  // padding: 14px 0;
+  background-color: $navbar-background-color;
+  flex-grow: 1;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: .875rem;
+
+  color: $navbar-link-color;
+  border-top: 1px solid $navbar-border-color;
+  border-bottom: 1px solid $navbar-border-color;
+
+  transition: .2s;
+
+  &:first-of-type {
+    border-left: 1px solid $navbar-border-color;
+  }
+  &:last-of-type {
+    border-right: 1px solid $navbar-border-color;
+  }
+
+  &:active,
+  &:focus {
+    color: #ffffff;
+    background-color: $main-blue-color;
+    border-color: $main-blue-color;
+  }
+  &.active {
+    color: #ffffff;
+    background-color: $main-blue-color;
+    border-color: $main-blue-color;
+  }
+
+
+  &:hover {
+    color: #ffffff;
+    background-color: $main-blue-color-hover;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .nav-item {
+    border: 1px solid $navbar-border-color;
+    border-top: none;
+
+    padding: 14px 0;
+
+    &:first-of-type {
+      border-top: 1px solid $navbar-border-color;
+    }
+  }
+
+  .nav__link {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar-search {
+    padding-top: 10px;
+  }
+
+  .navbar-brand,
+  .navbar-search {
+    width: 100%;
+  }
+
+  #searchField {
+    flex-grow: 1;
+  }
+}
