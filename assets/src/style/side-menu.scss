@@ -1,10 +1,13 @@
 #sideMenu {
-  border: 1px solid $navbar-border-color;
   padding: 0;
   margin: 0;
 
+  padding-left: 15px;
+  margin-bottom: 1.3em;
+
   .navbar-nav {
     padding: 0;
+    border: 1px solid $navbar-border-color;
   }
 
   .nav-item {
@@ -79,5 +82,31 @@
     &:before {
       display: none;
     }
+  }
+
+  .side-article {
+    background-color: $navbar-background-color;
+
+    & .article__title {
+      margin-bottom: 0;
+    }
+  }
+
+  .side-article__content {
+    padding: 10px;
+  }
+
+  .side-article__image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #sideMenu {
+    padding-right: 15px !important;
+  }
+
+  #sideMenu .nav-item {
+    padding: 0;
   }
 }

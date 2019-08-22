@@ -51,7 +51,6 @@
 }
 
 .nav-item {
-  // padding: 14px 0;
   background-color: $navbar-background-color;
   flex-grow: 1;
 
@@ -85,6 +84,11 @@
     border-color: $main-blue-color;
   }
 
+  &.disabled {
+    color: #fbfbfb;
+    background-color: #dadada;
+  }
+
 
   &:hover {
     color: #ffffff;
@@ -95,7 +99,6 @@
 @media (max-width: 767.98px) {
   .nav-item {
     border: 1px solid $navbar-border-color;
-    border-top: none;
 
     padding: 14px 0;
 
