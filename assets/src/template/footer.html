@@ -5,9 +5,11 @@
       <div class="col-md-4 twitter-feed">
         <h4 class="twit-feed__title footer-title">twitter feed</h4>
         <a href="#" class="twit-feed__link">
-          <time class="twit-feed__time">23 oct</time>
+          <span class="twit-feed__time">23 oct</span>
         </a>
-        <p class="twit-feed__text">In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean aug</p>
+        <p class="twit-feed__text">In ultricies pellentesque massa a porta.
+          Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla.
+          In eget mi dui, sit amet scelerisque nunc. Aenean aug</p>
       </div>
       <!-- /twitter feed -->
       <!-- footer link -->
@@ -40,7 +42,7 @@
           <!-- /sitemap -->
           <!-- social -->
           <div class="social">
-            <h4 class="social__title footer-title"><nobr>social networks</nobr></h4>
+            <h4 class="social__title footer-title">social network</h4>
             <ul class="social__list">
               <li class="social__item">
                 <a href="#" class="social__link twitter"><span class="hidden">twitter</span></a>
@@ -89,34 +91,50 @@
 <template id="article-template">
 
   <article class="article">
-      <!-- labeled, light, lined, blue -->
-      <p class="article__title labeled lined-after fs-medium">article title</p>
+      <!-- classes for article__title -->
+      <!--   labeled, light, lined, lined-after, blue -->
+      <!--   fontsize: "fs-* [small, medium, large, xlarge]" -->
+      <h3 class="article__title labeled lined-after fs-medium">article title</h3>
       <div class="article__content-wrapper">
         <div class="article__aside">
-          <img src="https://via.placeholder.com/180x180.jpg" alt="" class="article__image">
+          <img src="img/140x140.jpg" alt="" class="article__image">
         </div>
         <div class="article__content">
+          <!-- single image with caption -->
           <figure class="article__image-wrapper">
+            <!-- single image without caption -->
             <img src="" alt="Article image" class="article__image">
             <figcaption class="article__image-caption">image description</figcaption>
           </figure>
 
+          <!-- multiple images -->
           <div class="article__gallery">
+            <!-- single image -->
             <figure class="article__image-wrapper">
-              <img src="https://via.placeholder.com/180x180.jpg" alt="Article image" class="article__image">
+              <img src="img/140x140.jpg" alt="Article image" class="article__image">
+              <figcaption class="article__image-caption">image description</figcaption>
+            </figure>
+            <!-- /single image -->
+            <figure class="article__image-wrapper">
+              <img src="img/140x140.jpg" alt="Article image" class="article__image">
               <figcaption class="article__image-caption">image description</figcaption>
             </figure>
             <figure class="article__image-wrapper">
-              <img src="https://via.placeholder.com/180x180.jpg" alt="Article image" class="article__image">
-              <figcaption class="article__image-caption">image description</figcaption>
-            </figure>
-            <figure class="article__image-wrapper">
-              <img src="https://via.placeholder.com/360x360.jpg" alt="Article image" class="article__image">
+              <img src="img/140x140.jpg" alt="Article image" class="article__image">
               <figcaption class="article__image-caption">image description</figcaption>
             </figure>
           </div>
 
-          <p class="article__text">In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac ultrices. </p>
+          <!-- may contain "text-align-justify" class -->
+          <p class="article__text">In ultricies pellentesque massa a porta.
+            Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla.
+            In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu,
+            convallis ac vulputate vitae, mollis non lectus. Donec hendrerit
+            lacus ac massa ornare hendrerit sagittis lacus tempor.
+            Vivamus et dui et neque accumsan varius et ut erat.
+            Enean augue arcu, convallis ac ultrices. </p>
+
+          <!-- related link, author, etc -->
           <div class="article__related">
             <a href="#" class="article__link">Read more</a>
           </div>
