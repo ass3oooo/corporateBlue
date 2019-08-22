@@ -19,6 +19,9 @@
 }
 
 .navbar-brand {
+  display: flex;
+  align-items: center;
+
   position: relative;
   padding-left: 1.3rem;
 
@@ -37,6 +40,11 @@
     height: 1rem;
 
     border: 2px solid $main-blue-color;
+  }
+
+  &:hover {
+    color: $brand-text-color;
+    text-decoration: underline;
   }
 }
 
@@ -96,6 +104,10 @@
   }
 }
 
+.nav-but {
+
+}
+
 @media (max-width: 767.98px) {
   .nav-item {
     border: 1px solid $navbar-border-color;
@@ -117,16 +129,8 @@
     justify-content: center;
   }
 
-  .navbar-search {
-    padding-top: 10px;
-  }
-
-  .navbar-brand,
-  .navbar-search {
+  .navbar-brand {
     width: 100%;
-  }
-
-  #searchField {
-    flex-grow: 1;
+    margin-bottom: 10px;
   }
 }

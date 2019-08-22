@@ -42,3 +42,24 @@ input[type='radio'].hidden {
 .w-50 {
   width: 50% !important;
 }
+
+.lg-w-100 {
+  width: 100% !important;
+}
+
+.btn:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.btn:active,
+.btn:focus {
+  background-color: #69d5e6;
+  outline: 0;
+}
+
+@media (max-width: 991.98px) {
+  .lg-w-100 {
+    display: none;
+  }
+}

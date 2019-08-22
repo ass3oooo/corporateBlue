@@ -7592,6 +7592,22 @@ input[type='radio'].hidden {
 .w-50 {
   width: 50% !important; }
 
+.lg-w-100 {
+  width: 100% !important; }
+
+.btn:hover {
+  color: #ffffff;
+  text-decoration: underline; }
+
+.btn:active,
+.btn:focus {
+  background-color: #69d5e6;
+  outline: 0; }
+
+@media (max-width: 991.98px) {
+  .lg-w-100 {
+    display: none; } }
+
 #searchField {
   display: inline-block;
   width: auto;
@@ -7608,6 +7624,10 @@ input[type='radio'].hidden {
   border-radius: 0; }
 
 .navbar-brand {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
   position: relative;
   padding-left: 1.3rem;
   color: #7e7e7e; }
@@ -7620,6 +7640,9 @@ input[type='radio'].hidden {
     width: 1rem;
     height: 1rem;
     border: 2px solid #29c5e6; }
+  .navbar-brand:hover {
+    color: #7e7e7e;
+    text-decoration: underline; }
 
 .header {
   padding-top: 25px;
@@ -7673,14 +7696,9 @@ input[type='radio'].hidden {
   .navbar {
     -ms-flex-pack: center;
         justify-content: center; }
-  .navbar-search {
-    padding-top: 10px; }
-  .navbar-brand,
-  .navbar-search {
-    width: 100%; }
-  #searchField {
-    -ms-flex-positive: 1;
-        flex-grow: 1; } }
+  .navbar-brand {
+    width: 100%;
+    margin-bottom: 10px; } }
 
 .hero-slider-wrapper {
   position: relative;
@@ -7741,6 +7759,18 @@ input[type='radio'].hidden {
   background-color: #e2e2e2;
   font-weight: lighter; }
 
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .hero__item-title {
   margin-bottom: .325em;
   font-size: 2.625em;
@@ -7758,7 +7788,9 @@ input[type='radio'].hidden {
     background-color: #29c5e6; }
 
 .hero__item.active .hero__item-content {
-  display: block; }
+  display: block;
+  -webkit-animation: fade-in .4s linear;
+          animation: fade-in .4s linear; }
 
 .hero__item.active .hero__item-image {
   position: absolute;
@@ -7775,6 +7807,9 @@ input[type='radio'].hidden {
     width: 50%; } }
 
 @media (max-width: 575.98px) {
+  .hero__item.active .hero__item-content {
+    -webkit-animation: none;
+            animation: none; }
   .hero-slider-wrapper {
     padding-top: 0; }
   .hero__item.active .hero__item-label {

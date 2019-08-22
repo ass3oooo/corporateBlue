@@ -9,23 +9,27 @@
 <header class="header">
   <div class="container">
     <div class="row">
-      <div class="col navbar">
-        <div class="navbar-brand">whitesquare</div>
+      <nav class="navbar navbar-expand-md flex-wrap w-100 align-items-stretch justify-content-between">
+        <a class="navbar-brand" href="#">whitesquare</a>
         <div class="navbar-search d-flex">
           <input class="form-control" id="searchField" type="text" name="navbar_search" value="" placeholder="Search">
           <input class="btn search-submit" type="submit" name="searchSubmit" value="go">
         </div>
-        <div id="navbar" class="navbar-nav navbar-expand-md justify-content-between">
-          <a href="#" class="nav-item nav-link col active">home</a>
-          <a href="about.html" class="nav-item nav-link col">about us</a>
-          <a href="#" class="nav-item nav-link col disabled">services</a>
-          <a href="#" class="nav-item nav-link col disabled">partners</a>
-          <a href="#" class="nav-item nav-link col disabled">customers</a>
-          <a href="projects.html" class="nav-item nav-link col">project</a>
-          <a href="#" class="nav-item nav-link col disabled">career</a>
-          <a href="#" class="nav-item nav-link col disabled">contact</a>
+        <button class="navbar-toggler collapsed btn nav-btn search-submit" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">menu</button>
+
+        <div class="navbar-collapse collapse w-100" id="navbar" style="">
+          <div class="navbar-nav mr-auto w-100">
+            <a href="#" class="nav-item nav-link col active">home</a>
+            <a href="about.html" class="nav-item nav-link col">about us</a>
+            <a href="#" class="nav-item nav-link col disabled">services</a>
+            <a href="#" class="nav-item nav-link col disabled">partners</a>
+            <a href="#" class="nav-item nav-link col disabled">customers</a>
+            <a href="projects.html" class="nav-item nav-link col">project</a>
+            <a href="#" class="nav-item nav-link col disabled">career</a>
+            <a href="#" class="nav-item nav-link col disabled">contact</a>
+          </div>
         </div>
-      </div>
+      </nav>
     </div>
   </div>
 </header>
@@ -37,35 +41,35 @@
     <div class="row">
       <div class="col">
         <div class="hero-slider-wrapper">
-          <ol class="hero__list">
+          <ol class="hero__list" id="slider">
             <li class="hero__item active">
-              <div class="hero__item-label">Lorem ipsum dolor.</div>
+              <div class="hero__item-label">Lorem ipsum dolor 1</div>
               <div class="hero__item-content">
                 <img src="" alt="" class="hero__item-image">
-                <p class="hero__item-title">Lorem ipsum dolor sit amet, consectetur.</p>
+                <p class="hero__item-title">Lorem ipsum dolor sit amet, consectetur 1</p>
                 <p class="hero__item-text">Lorem ipsum dolor sit amet.</p>
               </div>
             </li>
             <li class="hero__item">
-              <div class="hero__item-label">Lorem ipsum dolor.</div>
+              <div class="hero__item-label">Lorem ipsum dolor 2</div>
               <div class="hero__item-content">
-                <p class="hero__item-title">Lorem ipsum dolor sit amet, consectetur.</p>
-                <p class="hero__item-text">Lorem ipsum dolor sit amet.</p>
-                <img src="" alt="" class="hero__item-image">
-              </div>
-            </li>
-            <li class="hero__item">
-              <div class="hero__item-label">Lorem ipsum dolor.</div>
-              <div class="hero__item-content">
-                <p class="hero__item-title">Lorem ipsum dolor sit amet, consectetur.</p>
+                <p class="hero__item-title">Lorem ipsum dolor sit amet, consectetur 2</p>
                 <p class="hero__item-text">Lorem ipsum dolor sit amet.</p>
                 <img src="" alt="" class="hero__item-image">
               </div>
             </li>
             <li class="hero__item">
-              <div class="hero__item-label">Lorem ipsum dolor.</div>
+              <div class="hero__item-label">Lorem ipsum dolor 3</div>
               <div class="hero__item-content">
-                <p class="hero__item-title">Lorem ipsum dolor sit amet, consectetur.</p>
+                <p class="hero__item-title">Lorem ipsum dolor sit amet, consectetur 3</p>
+                <p class="hero__item-text">Lorem ipsum dolor sit amet.</p>
+                <img src="" alt="" class="hero__item-image">
+              </div>
+            </li>
+            <li class="hero__item">
+              <div class="hero__item-label">Lorem ipsum dolor 4</div>
+              <div class="hero__item-content">
+                <p class="hero__item-title">Lorem ipsum dolor sit amet, consectetur 4</p>
                 <p class="hero__item-text">Lorem ipsum dolor sit amet.</p>
                 <img src="" alt="" class="hero__item-image">
               </div>

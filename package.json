@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "gulp-uglify-es": "^1.0.4",
     "jquery": "^3.4.1",
-    "popper.js": "^1.15.0"
+    "popper.js": "^1.15.0",
+    "terser": "^4.2.0"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
@@ -27,6 +29,7 @@
     "gulp-rimraf": "^0.2.2",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.2.0",
     "gulp-uglify": "^3.0.2",
     "imagemin-jpeg-recompress": "^6.0.0",
     "imagemin-pngquant": "^7.0.0"

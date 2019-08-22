@@ -14,23 +14,27 @@
 <header class="header">
   <div class="container">
     <div class="row">
-      <div class="col navbar">
-        <div class="navbar-brand">whitesquare</div>
+      <nav class="navbar navbar-expand-md flex-wrap w-100 align-items-stretch justify-content-between">
+        <a class="navbar-brand" href="#">whitesquare</a>
         <div class="navbar-search d-flex">
           <input class="form-control" id="searchField" type="text" name="navbar_search" value="" placeholder="Search">
           <input class="btn search-submit" type="submit" name="searchSubmit" value="go">
         </div>
-        <div class="navbar-nav navbar-expand-md justify-content-between">
-          <a href="index.html" class="nav-item nav-link col">home</a>
-          <a href="#" class="nav-item nav-link col active">about us</a>
-          <a href="#" class="nav-item nav-link col disabled">services</a>
-          <a href="#" class="nav-item nav-link col disabled">partners</a>
-          <a href="#" class="nav-item nav-link col disabled">customers</a>
-          <a href="projects.html" class="nav-item nav-link col">project</a>
-          <a href="#" class="nav-item nav-link col disabled">career</a>
-          <a href="#" class="nav-item nav-link col disabled">contact</a>
+        <button class="navbar-toggler collapsed btn nav-btn search-submit" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">menu</button>
+
+        <div class="navbar-collapse collapse w-100" id="navbar" style="">
+          <div class="navbar-nav mr-auto w-100">
+            <a href="index.html" class="nav-item nav-link col">home</a>
+            <a href="about.html" class="nav-item nav-link col active">about us</a>
+            <a href="#" class="nav-item nav-link col disabled">services</a>
+            <a href="#" class="nav-item nav-link col disabled">partners</a>
+            <a href="#" class="nav-item nav-link col disabled">customers</a>
+            <a href="projects.html" class="nav-item nav-link col">project</a>
+            <a href="#" class="nav-item nav-link col disabled">career</a>
+            <a href="#" class="nav-item nav-link col disabled">contact</a>
+          </div>
         </div>
-      </div>
+      </nav>
     </div>
   </div>
 </header>
@@ -145,6 +149,7 @@
                     <p class="employee--position">developer</p>
                   </figcaption>
                 </figure>
+                <div class="lg-w-100"></div>
                 <figure class="article__image-wrapper align-items-center">
                   <img src="https://via.placeholder.com/100x100.jpg" alt="" class="article__image">
                   <figcaption class="article__image-caption">

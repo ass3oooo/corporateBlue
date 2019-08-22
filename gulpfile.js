@@ -51,7 +51,7 @@ var gulp = require('gulp'),  // подключаем Gulp
   sass = require('gulp-sass'), // модуль для компиляции SASS (SCSS) в CSS
   autoprefixer = require('gulp-autoprefixer'), // модуль для автоматической установки автопрефиксов
   cleanCSS = require('gulp-clean-css'), // плагин для минимизации CSS
-  uglify = require('gulp-uglify'), // модуль для минимизации JavaScript
+  terser = require('gulp-terser'), // модуль для минимизации JavaScript
   cache = require('gulp-cache'), // модуль для кэширования
   imagemin = require('gulp-imagemin'), // плагин для сжатия PNG, JPEG, GIF и SVG изображений
   jpegrecompress = require('imagemin-jpeg-recompress'), // плагин для сжатия jpeg
@@ -100,7 +100,7 @@ gulp.task('js:build', function () {
     .pipe(gulp.dest(path.build.js))
     .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.init()) //инициализируем sourcemap
-    .pipe(uglify()) // минимизируем js
+    .pipe(terser()) // минимизируем js
     .pipe(sourcemaps.write('./')) //  записываем sourcemap
     .pipe(gulp.dest(path.build.js)) // положим готовый файл
     .pipe(webserver.reload({ stream: true })); // перезагрузим сервер
